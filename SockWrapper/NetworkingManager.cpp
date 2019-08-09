@@ -15,8 +15,7 @@
 using namespace std;
 using namespace SockWrapperForCplusplus;
 
-const ssize_t sendData(Socket* _targetServer,
-									const void* _sendData, const int _flag=0, const size_t _dataSize) {
+const ssize_t sendData(Socket* _targetServer, const void* _sendData, const size_t _dataSize, const int _flag=0) {
 
 	size_t dataSize = _dataSize;
 	if( _dataSize == 0)
@@ -26,8 +25,7 @@ const ssize_t sendData(Socket* _targetServer,
 
 }
 
-const ssize_t recvData(Socket* _recvServer,
-										void* _readData, const int _flag, const size_t _dataSize) {
+const ssize_t recvData(Socket* _recvServer, void* _readData, const int _flag, const size_t _dataSize) {
 
 	size_t dataSize = _dataSize;
 	if( dataSize == 0 ) 

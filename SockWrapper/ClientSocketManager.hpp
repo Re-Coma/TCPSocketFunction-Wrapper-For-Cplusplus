@@ -24,6 +24,6 @@ namespace SockWrapperForCplusplus {
 
 	const bool connectToServer(Socket* _server);
 
-};
+}
 
 #endif

@@ -12,6 +12,7 @@
 #ifndef SOCKET_HPP
 # define SOCKET_HPP
 
+
 #include <iostream>
 #include <string>
 
@@ -67,7 +68,5 @@ namespace SockWrapperForCplusplus {
 		//getSockopt
 	};
 }
-
-
 
 #endif

@@ -28,7 +28,7 @@ namespace SockWrapperForCplusplus {
 	const bool listenClient(Socket* _server,const int _range );
 	const bool acceptClient( Socket* _server, Socket* _client );
 
-};
+}
 
 
 #endif

@@ -25,14 +25,12 @@ using namespace std;
 
 namespace SockWrapperForCplusplus {
 	
-	const ssize_t sendData(Socket* _targetServer,
-								void* _sendData, const int _flag=0, const size_t _dataSize);
+	const ssize_t sendData(Socket* _targetServer, void* _sendData, const size_t _dataSize, const int _flag=0);
 
 	//Throw SocketDataSizeZeroException!
-	const ssize_t recvData(Socket* _recvServer,
-								void* _readData, const size_t _dataSize, const int _flag=0);
+	const ssize_t recvData(Socket* _recvServer, void* _readData, const size_t _dataSize, const int _flag=0);
 
-};
+}
 
 
 #endif

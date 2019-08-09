@@ -11,9 +11,8 @@
 #ifdef SOCKWRAPPERLIB_HPP
 # define SOCKWRAPPERLIB_HPP
 
-#include "ClientSocketManager.hpp"
-#include "NetworkingSocketManager.hpp"
-#include "ServerSocketManager.hpp"
-#include "SocketException.hpp"
+#include "SockWrapper/ClientSocketManager.hpp"
+#include "SockWrapper/NetworkingManager.hpp"
+#include "SockWrapper/ServerSocketManager.hpp"
 
 #endif
