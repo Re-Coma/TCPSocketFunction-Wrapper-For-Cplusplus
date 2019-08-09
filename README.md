@@ -1,10 +1,18 @@
 # TCP Socket Function Wrapper For C++
 __Object__ : The Alternative TCP Socket Function for Boost Lib that requires much of disk memory
-* 해당 C++ 프로젝트에 비해 어마어마하게 큰 용량의 Boot Library의 Socket Library를 대체하기 위해 임시방편으로 사용하는 Library
+* C++도 C언어의 소켓 함수를 사용하나, C++ 코드에 C코드가 들어가면 코드가 난잡해질수 있으므로  C로 되어있는 소켓 함수들을 C++로 Wrapping
+* Boost C++의 asio 라이브러리가 이 라이브러리보다 훨씬 더 좋은 기능을 갖고 있지만, 용량이 상당히 크므로 이를 대체하기 위해 임시방편으로 사용하는 Library
 
+## Compiler
+* g++ (GCC) 7.3.1 20180303 (Red Hat 7.3.1-5)
+* STANDARD C++17
+## Update Status
+### __First Alpha Version 1 (release v 0.0.1)__
+* 기본적인 기능 구현 : socket, bind, listen, accept, connect, recv, send
+* Unix GCC 에서만 사용 가능. Version 2에 ANSI 기반 라이브러리 구현 예정
 
+* * *
 ## Example Server-Client
-
 
 ### Server.cpp
 <pre><code>
