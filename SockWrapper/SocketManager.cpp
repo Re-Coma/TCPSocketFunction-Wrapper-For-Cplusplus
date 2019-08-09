@@ -8,9 +8,9 @@
 #include <arpa/inet.h>
 
 using namespace std;
-using namespace SockWrapperForCplusplus;
+//using namespace SockWrapperForCplusplus;
 
-const bool setSocket(Socket* _socket) {
+const bool SockWrapperForCplusplus::setSocket(Socket* _socket) {
 
 	if( _socket->setDiscripter( socket(PF_INET, SOCK_STREAM, 0)) >= 3 )
 		return true;
@@ -18,7 +18,7 @@ const bool setSocket(Socket* _socket) {
 
 }
 
-const bool closeSocket(Socket* _socket ) {
+const bool SockWrapperForCplusplus::closeSocket(Socket* _socket ) {
 
 	if( close( _socket->getDiscripter()) == 0 ) {
 		_socket->setDiscripter(-1);
@@ -27,7 +27,7 @@ const bool closeSocket(Socket* _socket ) {
 	
 }
 
-const bool setSocketOption(Socket* _socket, int _level, int _optname, 
+const bool SockWrapperForCplusplus::setSocketOption(Socket* _socket, int _level, int _optname, 
 									void* _optival, socklen_t _optlen) {
 	
 	if( setsockopt(_socket->getDiscripter(), _level, _optname, _optival, _optlen) == 0)
