@@ -13,10 +13,8 @@
 #include <errno.h>
 
 using namespace std;
-using namespace SockWrapperForCplusplus;
 
-
-const bool bindSocket(Socket* _server) {
+const bool SockWrapperForCplusplus::bindSocket(Socket* _server) {
 
 	if( bind( _server->getDiscripter(),
 				(struct sockaddr*)_server->getSocketItem(),
@@ -30,14 +28,14 @@ const bool bindSocket(Socket* _server) {
 
 }
 
-const bool listenClient(Socket* _server, const int _range) {
+const bool SockWrapperForCplusplus::listenClient(Socket* _server, const int _range) {
 
 	if( listen( _server->getDiscripter(), _range) < 0 ) return false;
 	else return true;
 
 }
 
-const bool acceptClient( Socket* _server, Socket* _client ) {
+const bool SockWrapperForCplusplus::acceptClient( Socket* _server, Socket* _client ) {
 
 	int newSock =  accept( _server->getDiscripter(), 
 							(struct sockaddr*)_client->getSocketItem(),
