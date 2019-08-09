@@ -9,10 +9,8 @@
 #include <arpa/inet.h>
 #include <sys/socket.h>
 
-using namespace SockWrapperForCplusplus;
 
-
-const bool connectToServer(Socket* _server) {
+const bool SockWrapperForCplusplus::connectToServer(Socket* _server) {
 
 	if( connect(_server->getDiscripter(), 
 				(struct sockaddr*)_server->getSocketItem(),
