@@ -4,10 +4,6 @@
 
 #include "SockWrapper/ClientSocketManager.hpp"
 #include "SockWrapper/NetworkingManager.hpp"
-#include "SockWrapper/ServerSocketManager.hpp"
-#include "SockWrapper/SocketManager.hpp"
-#include "SockWrapper/Socket.hpp"
-#include "SockWrapper/SocketException.hpp"
 
 using namespace std;
 using namespace SockWrapperForCplusplus;
