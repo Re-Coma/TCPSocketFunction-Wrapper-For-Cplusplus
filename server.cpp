@@ -2,15 +2,8 @@
 #include <iostream>
 #include <string>
 
-#include "SockWrapper/ClientSocketManager.hpp"
-#include "SockWrapper/NetworkingManager.hpp"
 #include "SockWrapper/ServerSocketManager.hpp"
-#include "SockWrapper/SocketManager.hpp"
-#include "SockWrapper/Socket.hpp"
-#include "SockWrapper/SocketException.hpp"
-
-
-//#include "SockWrapper/SockWrapperLib.hpp"
+#include "SockWrapper/NetworkingManager.hpp"
 
 using namespace std;
 using namespace SockWrapperForCplusplus;
